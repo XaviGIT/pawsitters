@@ -12,15 +12,6 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="city-selector">
-                    📍 <select id="citySelect" onchange="updateCity()">
-                        <option value="lisboa">Lisboa</option>
-                        <option value="porto">Porto</option>
-                        <option value="coimbra">Coimbra</option>
-                        <option value="braga">Braga</option>
-                        <option value="aveiro">Aveiro</option>
-                    </select>
-                </div>
                 <h1 id="mainTitle">PawSitters Lisboa 🐕</h1>
                 <div class="tagline">
                     Não deixe o seu cãozinho com "paw-blemas"! 🐾
@@ -135,22 +126,6 @@ ss="container">
     </footer>
 
     <script>
-        // City selection functionality
-        function updateCity() {
-            const citySelect = document.getElementById('citySelect');
-            const selectedCity = citySelect.value;
-            const cityNames = {
-                'lisboa': 'Lisboa',
-                'porto': 'Porto',
-                'coimbra': 'Coimbra',
-                'braga': 'Braga',
-                'aveiro': 'Aveiro'
-            };
-
-            document.getElementById('mainTitle').textContent = `PawSitters ${cityNames[selectedCity]} 🐕`;
-            document.title = `PawSitters ${cityNames[selectedCity]} - Cuidamos do Seu Melhor Amigo! 🐕`;
-        }
-
         // Floating paws animation
         function createFloatingPaw() {
             const paw = document.createElement('div');
