@@ -12,10 +12,25 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg,
+    /* background: linear-gradient(135deg,
             #ff9a9e 0%,
             #fecfef 50%,
             #fecfef 100%);
+     */
+    background: url("dogs.avif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter:
+        brightness(0.4)
+        /* Darkens the image */
+        contrast(0.8)
+        /* Reduces contrast */
+        blur(1px)
+        /* Adds slight blur */
+        grayscale(0.5);
+    /* Adds some grayscale */
     min-height: 100vh;
     display: flex;
     align-items: center;
